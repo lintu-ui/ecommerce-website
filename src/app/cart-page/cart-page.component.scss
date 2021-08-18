@@ -1,0 +1,18 @@
+count-card:hover{
+    cursor: pointer;
+   }
+   .blinking{
+       animation:blinkingText 1.2s infinite;
+   }
+   .card{
+       min-height: 400px !important;
+       max-height: 400px !important;
+   }
+
+   @keyframes blinkingText{
+    0%{     color: #ff4c4c;    }
+    49%{    color: #ff4c4c; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #ff4c4c;    }
+}

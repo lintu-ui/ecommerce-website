@@ -1,0 +1,32 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 height-fix"  *ngFor="let list  of cart">
+                <div class="card card-chart">
+                    <div class="card-header card-header-success">
+                        <div class="ct-chart" id="dailySalesChart"></div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">{{list.title}}</h4>
+                        
+                        <p class="card-category">
+                            {{list.price}}
+                        </p>
+                    </div>
+                    <img [src]="list.image">
+                    <p class="card-category">
+                        {{list.description}}
+                        <button type="button"  class="btn btn-primary">Add to Cart</button>
+                        <button type="button" (click)="goBack()"   class="btn btn-primary">Back</button>
+                    </p>
+                    
+                   
+                </div>
+            </div>
+          
+
+        </div>
+    </div>
+
+
+</div>
